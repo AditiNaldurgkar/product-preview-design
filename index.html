@@ -7,11 +7,10 @@
     <style>
      #main-img{
         height: 400px;
-        width:400px;
-        object-fit: cover;
+        width:500px;
         display: block;
         margin: 30px auto;
-        box-shadow: 2px 2px 5px 5px rgb(242, 171, 204);
+        box-shadow: 2px 2px 5px 5px #BDB76B;
         border-radius: 10px;
         border-color: black;
         border-style: solid;
@@ -32,23 +31,30 @@
         justify-content: center;
 
     }
+    h1{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+    }
+    body{
+        background-color: 	#FAFAD2;
+    }
     </style>
 </head>
 <body>
+    <h1>Have a look at our latest TV models...</h1>
     <img src="1.jpg" id="main-img">
     <div class="img-container">
-        <img src="1.jpg" class="img">
-        <img src="2.jpg" class="img">
-        <img src="3.jpg" class="img">
-        <img src="4.jpg" class="img">
-        <img src="5.jpg" class="img">
+        <img src="1.jpg" class="img" onclick="change_img('1.jpg')">
+        <img src="2.jpg" class="img" onclick="change_img('2.jpg')">
+        <img src="3.jpg" class="img" onclick="change_img('3.jpg')">
+        <img src="4.jpg" class="img" onclick="change_img('4.jpg')">
+        <img src="5.jpg" class="img" onclick="change_img('5.jpg')">
 
     </div>
     <script>
         function change_img(imgn){
             main = document.getElementById("main-img")
             main.src = imgn
-
         }
     </script>
 </body>
