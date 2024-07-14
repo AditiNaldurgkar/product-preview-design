@@ -14,11 +14,35 @@
         box-shadow: 2px 2px 5px 5px rgb(242, 171, 204);
         border-radius: 10px;
         border-color: black;
+        border-style: solid;
         border-width: 3px;
      }
+     .img{
+        height: 90px;
+        width:100px;
+        margin: 20px;
+        border: 1px solid black;
+        object-fit: cover;
+        cursor: pointer;
+        border-radius: 3px;  
+        padding: 2px;   }
+    .img-container{
+        display: flex;
+        margin: 20px auto;
+        justify-content: center;
+
+    }
     </style>
 </head>
 <body>
     <img src="1.jpg" id="main-img">
+    <div class="img-container">
+        <img src="1.jpg" class="img">
+        <img src="2.jpg" class="img">
+        <img src="3.jpg" class="img">
+        <img src="4.jpg" class="img">
+        <img src="5.jpg" class="img">
+
+    </div>
 </body>
 </html>
